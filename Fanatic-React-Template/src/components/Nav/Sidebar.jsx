@@ -4,21 +4,22 @@ import { Link } from "react-scroll";
 // Assets
 import CloseIcon from "../../assets/svg/CloseIcon";
 import LogoIcon from "../../assets/svg/Logo";
+import { ReactComponent as SidebarLogo } from '../../assets/svg/Logo.svg';
 
 export default function Sidebar({ sidebarOpen, toggleSidebar }) {
   return (
     <Wrapper className="animate darkBg" sidebarOpen={sidebarOpen}>
       <SidebarHeader className="flexSpaceCenter">
-        <div className="flexNullCenter">
-          <LogoIcon />
-          <h1 className="whiteColor font20" style={{ marginLeft: "15px" }}>
-            fanatic
-          </h1>
-        </div>
-        <CloseBtn onClick={() => toggleSidebar(!sidebarOpen)} className="animate pointer">
-          <CloseIcon />
-        </CloseBtn>
-      </SidebarHeader>
+  <div className="flexNullCenter">
+    <SidebarLogo style={{ width: '150px', height: '150px' }} />
+    {/* <h1 className="whiteColor font20" style={{ marginLeft: "1px" }}>
+      fanatic
+    </h1> */}
+  </div>
+  <CloseBtn onClick={() => toggleSidebar(!sidebarOpen)} className="animate pointer">
+    <CloseIcon />
+  </CloseBtn>
+</SidebarHeader>
 
       <UlStyle className="flexNullCenter flexColumn">
         <li className="semiBold font15 pointer">
@@ -123,6 +124,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
 }
 
 const Wrapper = styled.nav`
+  background-color: #add8e6; 
   width: 400px;
   height: 100vh;
   position: fixed;
