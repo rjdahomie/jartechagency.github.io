@@ -19,7 +19,11 @@ export default function TopNavbar() {
     };
   }, [y]);
 
+  const handleLogoClick = () => {
+    window.location.href = 'https://www.jartechagency.com';
+  };
 
+  
   return (
     <>
       <Sidebar sidebarOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
@@ -27,7 +31,20 @@ export default function TopNavbar() {
       <Wrapper className="flexCenter animate whiteBg" style={y > 100 ? { height: "60px" } : { height: "80px" }}>
         <NavInner className="container flexSpaceCenter">
           <Link className="pointer flexNullCenter" to="home" smooth={true}>
-            <Logo style={{ width: '180px', height: '180px', transition: 'opacity 0.2s ease-in-out'}} onMouseOver={(e) => e.target.style.opacity = 0.75} onMouseOut={(e) => e.target.style.opacity = 1}   />
+          <Logo
+            style={{
+              width: '180px',
+              height: '180px',
+              transition: 'opacity 0.2s ease-in-out, background-color 0.2s ease-in-out',
+            }}
+            onMouseOver={(e) => {
+              e.target.style.opacity = 0.75;
+            }}
+            onMouseOut={(e) => {
+              e.target.style.opacity = 1;
+            }}
+            onClick={handleLogoClick}
+          />
           </Link>
           <BurderWrapper className="pointer" onClick={() => toggleSidebar(!sidebarOpen)}>
             <BurgerIcon />

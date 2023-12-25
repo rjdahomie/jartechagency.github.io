@@ -11,9 +11,9 @@ export default function Pricing() {
           <HeaderInfo>
             <h1 className="font40 extraBold">Check Our Pricing</h1>
             <p className="font13">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+              Explore our competitive pricing plans designed to suit the unique needs of your business. Unlock 
               <br />
-              labore et dolore magna aliquyam erat, sed diam voluptua.
+              the full potential of cutting-edge technology without breaking the bank.
             </p>
           </HeaderInfo>
           <TablesWrapper className="flexSpaceNull">
@@ -22,13 +22,14 @@ export default function Pricing() {
                 icon="roller"
                 price="$20/mo"
                 title="Basic"
-                text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
+                text="Kickstart your online presence with a personalized website and a custom domain tailored for you."
                 offers={[
-                  { name: "Product Offer", cheked: true },
-                  { name: "Offer", cheked: true },
-                  { name: "Product Offer #2", cheked: false },
-                  { name: "Product", cheked: false },
-                  { name: "Product Offer", cheked: false },
+                  { name: "Personalized Website", cheked: true },
+                  { name: "Custom Domain", cheked: true },
+                  { name: "E-commerce Integration", cheked: false },
+                  { name: "Robust analytics", cheked: false },
+                  { name: "Advanced SEO tools", cheked: false },
+                  { name: "Advanced customization options", cheked: false },
                 ]}
                 action={() => alert("clicked")}
               />
@@ -38,13 +39,14 @@ export default function Pricing() {
                 icon="monitor"
                 price="$50/mo"
                 title="Pro"
-                text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
+                text="Boost your business with seamless e-commerce integration, expanding your online reach and enhancing overall performance."
                 offers={[
-                  { name: "Product Offer", cheked: true },
-                  { name: "Offer", cheked: true },
-                  { name: "Product Offer #2", cheked: true },
-                  { name: "Product", cheked: true },
-                  { name: "Product Offer", cheked: false },
+                  { name: "Personalized Website", cheked: true },
+                  { name: "Custom Domain", cheked: true },
+                  { name: "E-commerce Integration", cheked: true },
+                  { name: "Robust analytics", cheked: false },
+                  { name: "Advanced SEO tools", cheked: false },
+                  { name: "Advanced customization options", cheked: false },
                 ]}
                 action={() => alert("clicked")}
               />
@@ -54,13 +56,14 @@ export default function Pricing() {
                 icon="browser"
                 price="$100/mo"
                 title="Ultimate"
-                text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
+                text="Unleash your business's full potential with advanced SEO and unlimited customization backed by priority support and exclusive insights."
                 offers={[
-                  { name: "Product Offer", cheked: true },
-                  { name: "Offer", cheked: true },
-                  { name: "Product Offer #2", cheked: true },
-                  { name: "Product", cheked: true },
-                  { name: "Product Offer", cheked: true },
+                  { name: "Personalized Website", cheked: true },
+                  { name: "Custom Domain", cheked: true },
+                  { name: "E-commerce Integration", cheked: true },
+                  { name: "Robust analytics", cheked: true },
+                  { name: "Advanced SEO tools", cheked: true },
+                  { name: "Advanced customization options", cheked: true },
                 ]}
                 action={() => alert("clicked")}
               />

@@ -59,11 +59,11 @@ export default function Services() {
           <div className="container">
             <Advertising className="flexSpaceCenter">
               <AddLeft>
-                <h4 className="font15 semiBold">A few words about the company</h4>
-                <h2 className="font40 extraBold">A Study of Creativity</h2>
+                <h4 className="font15 semiBold">Take your business to the next level by</h4>
+                <h2 className="font40 extraBold">Leveraging Technology to Optimize your Company's Potential</h2>
                 <p className="font12">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-                  diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                  Transform your business with our advanced technology services, designed to boost efficiency, streamline workflows, and keep you ahead in 
+                  the competitive landscape. Choose innovation for sustainable growth and stay at the forefront of the digital era.
                 </p>
                 <ButtonsRow className="flexNullCenter" style={{ margin: "30px 0"}}>
                   <div style={{ width: "190px" }}>
